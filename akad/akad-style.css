@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #60606e;
+}
+
+/*------Header------*/
+
+.header {
+	background: url(img/bg.png);
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header_navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_menu {
+	width: 30px;
+	height: 15px;
+}
+
+.menu::before {
+	content: '';
+	background: #60606e;
+	width: 200%;
+	height: 1px;
+	position: absolute;
+	top: -7px;
+}
+
+.menu {
+	width: 50%;
+	height: 1px;
+	background: #60606e;
+	position: relative;
+	top: 7px;
+}
+
+.menu::after {
+	content: '';
+	background: #60606e;
+	width: 50%;
+	height: 1px;
+	position: absolute;
+	top: 7px;
+}
+
+.header_title,
+.header_subtitle {
+	align-self: center;
+	text-transform: uppercase;
+}
+
+.header_title {
+	margin-top: auto;
+}
+
+.header_subtitle {
+	margin-bottom: auto;
+	margin-top: 30px;
+}
+
+
+/*------Layout------*/
+
+
+.layout {
+	padding: 40px 80px;
+	width: 1300px;
+	margin: auto;
+}
+
+.layout_section {
+    margin-top: 110px;
+}
+
+
+.layout_section__center {
+	text-align: center;
+	padding: 0 210px;
+}
+
+
+/*------Article------*/
+
+
+.article_title::before {
+	content: '';
+	width: 70px;
+	height: 20px;
+	background: #7beec7;
+	position: absolute;
+	top: 50%;
+	z-index: -1;
+}
+
+.article_title {
+	font: 700 30px/48px 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 0;
+}
+
+.article_subtitle {
+	font: 700 14px/24px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+.article_text {
+	font: 400 14px/30px 'Open Sans', sans-serif;
+}
+
+
+/*------Benefit------*/
+
+
+.benefit_title {
+	font: 700 18px/48px 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.benefit_text {
+	font: 400 14px/30px 'Open Sans', sans-serif;
+	margin-top: 10px;
+}
+
+.benefit_icon::before {
+	content: '';
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #7beec7;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+
+/*------Footer------*/
+
+
+.footer {
+	background: #7beec7;
+}
+
+.footer_title {
+	font: 700 30px/48px 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+}
+
+.button {
+	font: 700 14px 'Montserrat', sans-serif;
+	background: #7beec7;
+    min-width: 130px;
+    padding: 20px 30px;
+    border: none;
+    line-height: 1em;
+}

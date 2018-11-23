@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <title>Document</title>
+   </head>
+   <body class="body">
+      <section class="payment">
+         <header class="payment_header">
+            <h1 class="payment_title">Harold Finch</h1>
+            <h2 class="payment_subtitle">Your Total</h2>
+            <div class="payment_price">$88</div>
+         </header>
+         <main class="payment_main">
+            <form action="#" method="Post" class="form">
+               <label class="form_label">
+                  <div class="form_caption">Credit card number</div>
+                  <input type="text" class="form_input" maxlength="16" required pattern="[0-9]{16}">
+               </label>
+               <div class="form_label">
+                  <div class="form_caption">Expiration date</div>
+                  <div class="form_line">
+                     <select name="month" class="form_select">
+                        <option value="Month">Month</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                     </select>
+                     <select name="year" class="form_select">
+                        <option value="Year">Year</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                     </select>
+                  </div>
+               </div>
+               <label class="form_label form_label__last">
+                  <div class="form_caption">CVV</div>
+                  <div class="form_line">
+                     <input type="text" class="form_input form_input__cvv">
+                     <div class="form_tip">3 or 4 digits- <span>view example</span></div>
+                  </div>
+               </label>
+               <input type="submit" class="form_submit form_submit__green" value="Pay">
+               <button type="reset" class="form_reset">Cancel order</button>
+            </form>
+         </main>
+      </section>
+   </body>
+</html>

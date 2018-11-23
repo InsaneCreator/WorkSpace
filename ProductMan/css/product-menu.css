@@ -1,0 +1,89 @@
+.product-menu {
+	text-align: center;
+	max-width: 1200px;
+	background-color: #FFF;
+	margin-top: 185px;
+    padding: 78px 72px 72px 72px;
+    max-height: 1200px;
+}
+
+.product-menu_title {
+	font: 48px/150px "ralewayblack", sans-serif;
+	background-image: url("../img/underline.png");
+	background-repeat: no-repeat;
+	background-position: center 115px;
+	letter-spacing: 0.025em;
+	margin: 0;
+}
+
+.product-menu_text {
+	font: 18px/24px "ralewayregular", sans-serif;
+	margin:0 0 78px 0	;
+}
+
+.product-gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+    min-height: 810px;
+}
+
+.product-gallery__caption {
+	transition: all 0.2s;
+	width: inherit;
+	height:  inherit;
+	background-color: red;
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	border-radius: 5px;
+}
+
+.product-gallery__caption-description {
+	font: 30px "robotoblack", sans-serif;
+	color: white;
+	position: absolute;
+	bottom:64px;
+	right:38px;
+	text-align: left;
+	transform: rotateY(180deg);
+}
+
+.product-gallery__caption-description_last-word {
+	border-bottom: 4px solid white;
+	padding-bottom: 7px;
+}
+
+.product-gallery__item {
+	height: 387px;
+	position:relative;
+}
+
+.product-gallery__item:first-child {
+	width: 691px;
+}
+
+.product-gallery__item:nth-child(2) {
+	width: 328px;
+}
+
+.product-gallery__item:nth-child(3) {
+	width: 328px;
+}
+
+.product-gallery__item:nth-child(4) {
+	width: 329px;
+}
+
+.product-gallery__item:nth-child(5) {
+	width: 328px;
+}
+
+.product-gallery__item:hover .product-gallery__caption {
+	opacity: 1;
+	transform: rotateY(180deg);
+	transition: all 0.5s;
+}
+

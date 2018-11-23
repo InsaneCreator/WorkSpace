@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../fonts/roboto-black-webfont.woff) format('woff2'),
+         url(../fonts/roboto-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/roboto-regular-webfont.woff) format('woff2'),
+         url(../fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayblack';
+    src: url(../fonts/raleway-black-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../fonts/roboto-bold-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(../fonts/roboto-light-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url(../fonts/raleway-regular-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold_italic';
+    src: url(../fonts/raleway-semibolditalic-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-semibolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

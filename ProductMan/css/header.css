@@ -1,0 +1,30 @@
+.header {
+	width: 1200px;
+	margin:0 auto;
+}
+
+.header-menu {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+.header-menu__logo {
+	margin-left: 5px;
+	font: 48px/27px "robotoblack", sans-serif;
+	letter-spacing: 0.025em;
+	color: #303030;
+}
+
+.header-menu__link {
+	font: 18px/27px "robotoregular", sans-serif;
+	letter-spacing: 0.025em;
+	color: #303030;
+	margin: 0 22px 0 22px;
+	text-decoration: none;
+}
+
+.header-menu__link:hover {
+	text-shadow: 0 0 2px #e10011;
+}

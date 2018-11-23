@@ -1,0 +1,44 @@
+.slider-menu {
+	display: flex;
+}
+
+.slider-item {
+	text-align: right;
+	padding: 55px 0 0 0;
+}
+
+.slider-item__title {
+	font: 150px/150px "ralewayblack", sans-serif;
+	letter-spacing: 0.025em;
+	color: #303030;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.slider-item__text {
+	font: 24px/36px "robotolight",sans-serif;
+	letter-spacing: 0.025em;
+	color: #303030;
+	text-align: right;
+}
+
+.slider-item__link {
+	text-decoration: none;
+	outline: none;
+	font: 24px/36px "robotobold", sans-serif;
+	letter-spacing: 0.025em;
+	color: #e10011;
+}
+
+.slider-menu__pic {
+	width: 365px;
+	height: 481px;
+	margin-left: 104px;
+	padding-top: 55px;
+}
+
+.slider-item__link:hover {
+	display: inline-block;
+	transform: scale(2);
+}

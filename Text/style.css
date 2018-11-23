@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+
+
+body {padding: 121px 121px;
+	margin: 130px 100px;
+	box-shadow: 2px 2px 40px #F0F0F0, -2px -2px 40px #F0F0F0;
+}
+
+h1 {
+	font: 42px "Playfair", Regular, serif; /*спросить у вани за Regular*/
+}
+
+p {
+	margin-top: 25px;
+	font:300 18px "Lato", sans-serif;
+	line-height: 34px;
+	letter-spacing: -0.005em;
+	font-weight: 300;
+	color: gray;
+
+}
+.first_paragraph:first-letter {
+	font: 110px "PlayFair", Regular, serif;
+	float: left;
+	line-height: 0.85;
+	font-weight: 300;
+	color: black;
+}
+
+blockquote:before{
+	content: open-quote;
+	font-size: 60px;
+	margin:0 16px;
+}
+
+
+
+blockquote {
+	margin-top: 25px;
+	font:300 italic 24px/34px "Lato", sans-serif;
+	color: grey;
+}
+
+
+button {
+	border: 2px solid orange;
+	font:700 18px/34px "Lato", sans-serif;
+	width: 265px;
+	height: 68px;
+	background: none;
+	color: orange;
+	text-transform: uppercase;
+	margin-top: 25px;
+	outline: none;
+}
+
+span {
+	font:300 60px/34px "Lato", sans-serif;
+	margin-right: 16px;
+}

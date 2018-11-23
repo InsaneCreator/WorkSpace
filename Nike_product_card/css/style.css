@@ -1,0 +1,241 @@
+html, body {
+	height: 100%;
+
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: linear-gradient(90deg, #673e97, #ac74b0);
+	box-sizing: border-box;
+
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg_t (1).png');
+	opacity: .2;
+	background-size: cover;
+
+}
+.header {
+	position: relative;
+}
+.header-menu {
+	display:flex;
+
+	justify-content: space-between;
+
+	width: 750px;
+	margin: 30px auto;
+}
+
+.header-menu__nav {
+	display: flex;
+	justify-content: space-around;
+
+
+}
+
+.header-menu__nav-link {
+ font:12.14px 'Roboto', sans-serif;
+ color: white;
+ text-transform: uppercase;
+ margin: 0 22px;
+ position: relative;
+ z-index: 10000;
+}
+.header-menu__nav-item:hover>.header-menu__nav-link{
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.main {
+	display: flex;
+	margin: 10px auto;
+}
+
+.menu {
+	display: flex;
+	width: 750px;
+	background-color: white;
+	position: relative;
+	margin: 30px auto;
+	box-shadow: -24px 0 0 -10px rgba(255,255,255, 0.3),
+	            -45px 0 0 -18px rgba(255,255,255, 0.3),
+	             24px 0 0 -10px rgba(255,255,255, 0.3),
+	             45px 0 0 -18px rgba(255,255,255, 0.3);
+}
+
+.menu-photo__title {
+	text-transform: uppercase;
+	color:white;
+	font: 600 72px "Lato", sans-serif;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 49px;
+	left: 50px;
+	text-shadow: 0 0 180px  #ac74b0;
+}
+
+.menu-photo {
+	width: 500px;
+	background: linear-gradient(#edeaec, #f4f4f4 95px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+}
+.menu-photo::after {
+	content: '';
+	background: url(../img/bg-product-pattern.png);
+	position: absolute;
+
+	width: 94%;
+	height: 50%;
+	top: 22px;
+	opacity: 0;
+}
+
+.menu-photo:hover::after {
+	opacity: 1;
+}
+.menu-info {
+	width: 250px;
+}
+
+.menu-photo__photo {
+	position: relative;
+	bottom: -20px;
+}
+
+.menu-photo__thumbnail-item {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	border: 2px solid white;
+	overflow: hidden;
+	background: white;
+	position: relative;
+	margin: 10px 8px 18px 8px;
+}
+
+.photo_item {
+	position: absolute;
+	top:0;
+	left: -3px;
+}
+.menu-info {
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+.new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 24px;
+	background-color: #ffa60d;
+	color: white;
+	text-transform: uppercase;
+	font:400 14px "Roboto", sans-serif;
+	margin: 43px 0 6px 31px;
+}
+
+.menu-info__title {
+font:bold 24px 'Roboto Condensed', sans-serif;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+margin: 6px 0 9.5px 31px;
+}
+
+.menu-info__title-word {
+	color: #5e4fff;
+	}
+.menu-info__rating {
+	display: inline-flex;
+	align-items: center;
+}
+
+.menu-info__rating-title {
+	font:bold 12px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+	margin: 0 8px 0 31px;
+	}
+
+	.menu-info_price {
+		font:300 22px 'Roboto', sans-serif;
+		margin: 9px 0 13px 31px;
+	}
+
+.menu-info__size {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.menu-info__size-title {
+	font: 12px 'Roboto', sans-serif;
+	letter-spacing: 0.01em;
+	margin: 13px 0 0 31px;
+}
+.menu-info_size-size {
+	display: inline-flex;
+	margin: 0 0 21px 12px;
+}
+
+.menu-info__size-item {display: flex;
+border: 1px solid transparent;
+justify-content: center;
+align-items: center;
+font: 14.57px 'Roboto Condensed', sans-serif;
+letter-spacing: 0.01em;
+	width: 25px;
+	height: 25px;
+	margin:0 11px;
+}
+
+.menu-info__size-item:hover {
+	border: 1px solid black;
+}
+
+.menu-info__size-link {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+
+.menu-info__button-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 12px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 118px;
+	height: 30px;
+	border: 1px solid black;
+	color: black;
+	margin: 2px 0 0 31px;
+}
+
+.menu-info__button-link_purple {
+	color: white;
+	border: 1px solid transparent;
+	background-color: #a200b8;
+}

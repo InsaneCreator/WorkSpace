@@ -1,0 +1,160 @@
+html, body {
+	height: 100%;
+}
+
+.body {
+	background: url('../img/Layer 5.png');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-menu {
+
+
+	background: rgb(17, 26, 40);
+	border-radius: 10px;
+	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	display: flex;
+
+	}
+
+.menu-photo {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+width: 430px;
+height: 391px;
+position: relative;
+}
+
+.menu-photo__logo {
+	position: absolute;
+	top: 24px;
+	left: 21px;
+}
+
+.menu-photo__photo {
+	position: absolute;
+	top: 126px;
+	left: 36px;
+
+}
+
+.menu-photo__color {
+	position: absolute;
+	bottom: 19px;
+	left: 176px;
+}
+.menu-photo__color-item {
+	display: inline-block;
+	width: 6px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: rgb(31, 39, 63);
+	border: 2px solid transparent;
+	margin: 0 3px 0 3px;
+}
+
+.menu-photo__color-item:nth-child(2) {
+	background-color: rgb(255, 255, 255);
+}
+
+.menu-photo__color-item:nth-child(3) {
+	background-color: rgb(237, 51, 51);
+}
+
+.menu-photo__color-item:nth-child(4) {
+	background-color: rgb(41, 227, 234);
+}
+
+.menu-photo__color-item:hover {
+	border: 2px solid gray;
+}
+
+.menu-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.menu-info__title {
+	text-transform: capitalize;
+	color: white;
+	font: 24px/26px 'Arial', sans-serif;
+	letter-spacing: 0.02em;
+	margin: 78px 87px 8.5px 0;
+color: #e1e1e1;
+
+}
+
+.menu-info__description {
+	text-transform: capitalize;
+	color: white;
+	font: 14px/26px 'Arial', sans-serif;
+	letter-spacing: 0.02em;
+	margin: 0 0 13.5px 0;
+}
+.menu-info__rating {
+	direction: rtl;
+	text-align: left;
+	margin: 0 0 27px 0;
+}
+.menu-info_rating-item {
+color: #9da1a6;
+font-size: 10px;
+}
+
+.menu-info_rating-item:hover ~ .menu-info_rating-item,
+.menu-info_rating-item:hover{
+	color: yellow;
+}
+
+
+.menu-info__select-item {
+	background-color: rgb(17, 26, 40);
+	width: 67px;
+	height: 30px;
+	border: 1px solid grey;
+	color: white;
+	margin: 0 -2px 29px 0;
+
+}
+
+.menu-info__select-item:focus option:first-child{
+display: none;
+}
+
+.menu-info__button {
+font: 14px/18px 'Arial', sans-serif;
+letter-spacing: 0.018em;
+border: 1px solid grey;
+background-color: #4c525a;
+opacity: 0.26;
+padding: 13px 53px;
+
+
+
+}
+.menu-info__button-button {
+	outline: none;
+	text-decoration: none;
+	color: white;
+
+}
+
+.Rectangle_1 {
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(76, 82, 90);
+  opacity: 0.259;
+  position: absolute;
+  left: 509px;
+  top: 385px;
+  width: 182px;
+  height: 38px;
+  z-index: 30;
+}

@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'latobold';
+  src: url(../fonts/lato-bold-webfont.woff2) format('woff2'), url(../fonts/lato-bold-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'big_johnregular';
+  src: url(../fonts/bigjohn-webfont.woff2) format('woff2'), url(../fonts/bigjohn-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'slim_joeregular';
+  src: url(../fonts/slimjoe-webfont.woff2) format('woff2'), url(../fonts/slimjoe-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url(../lato-regular-webfont.woff2) format('woff2'), url(../lato-regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  height: 650px;
+  background: url(../img/header-bg.jpg);
+  position: relative;
+  min-width: 1140px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  background-color: #3a4650;
+  width: 100%;
+  height: 100%;
+  opacity: .86;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 1;
+  width: 1140px;
+  padding: 36px 0;
+  margin: 0 auto;
+  color: rgb(72, 191, 114);
+}
+
+.header-nav {
+  color: white;
+  font: 16px/1 Arial, sans-serif;
+}
+
+.header-nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__item:not(:first-child)::before{
+  content: '/';
+  margin: 0 50px 0 50px;
+  color: grey;
+  font-size: 30px;
+  opacity: 0.5;
+  font-family: "Lato";
+  font-weight: 100;
+  transform: skewX(50deg);
+  font: 16px 'latobold', sans-serif;
+}
+
+.header__h1 {
+  text-align: center;
+  font: 46px 'big_johnregular', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 150px 0 0 0;
+}
+
+.header__h2 {
+  font: 30px 'slim_joeregular', sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.header-button {
+  height: 40px;
+  display: block;
+  border: 2px solid currentcolor;
+  margin: 0 auto;
+padding: 0 20px 0 20px;
+
+
+  font: 14px/25px 'latobold', sans-serif;
+  color: currentcolor;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  width: 1140px;
+  margin: 40px auto;
+}
+
+.main-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  margin: 50px auto 50px auto;
+}
+
+.main-nav__button {
+  margin:0 9px 0 9px;
+  text-decoration: none;
+  background-color: #eaeaea;
+  padding: 10px 15px 10px 15px;
+  color: #3c4955;
+  font: 16px "latobold", sans-serif;
+  border-radius: 3px;
+}
+
+.main-nav__button_active {
+  background-color: #48bf72;
+  color: white;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 820px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.portfolio__item {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  background: #edbf88;
+  box-sizing: border-box;
+}
+
+.portfolio__item:nth-child(2) {
+  height: 480px;
+  width: 450px;
+}
+
+.portfolio__item:nth-child(3) {
+  width: 650px;
+  height: 420px;
+}
+
+.portfolio__item:nth-child(4) {
+  width: 650px;
+  height: 360px;
+}
+
+.portfolio__pic {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+
+.portfolio__caption {
+  transition: all 0.5s;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(72, 191, 114, .9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.portfolio__item:hover .portfolio__caption {
+  opacity: .9;
+}
+
+.portfolio__title,
+.portfolio__description {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all .5s;
+}
+
+.portfolio__title {
+  transition-delay: .1s;
+  font: 30px/30px "latobold", sans-serif;
+  margin: 0;
+}
+
+.portfolio__description {
+  transition-delay: .2s;
+  font: 16px/30px "latoregular", sans-serif;
+}
+
+.portfolio__item:hover .portfolio__title,
+.portfolio__item:hover .portfolio__description {
+  opacity: 1;
+  transform: translateX(0);
+}
+.about {height: 500px;
+
+
+background-image: url(../img/men-computer.jpg);
+min-width: 1140px;
+border: 2px solid red;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  background-color: #3a4650;
+
+
+  opacity: .76;
+
+}
