@@ -116,6 +116,10 @@ body::before {
 	margin: 10px 8px 18px 8px;
 }
 
+.menu-photo__thumbnail-item:hover {
+	border: 2px solid red;
+}
+
 .photo_item {
 	position: absolute;
 	top: 0;
