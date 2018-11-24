@@ -1,0 +1,60 @@
+html, body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00796B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 500px;
+  height: 200px;
+}
+.card {
+  width: 500px;
+  height: 200px;
+
+  position: relative;
+  perspective: 1000px;
+}
+.front, .back {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.front{
+ background: white;;
+}
+
+.back {
+ background: #FF4081;
+
+  transform: rotateY(180deg);
+
+}
+
+
+.card:hover .front{
+  transform: rotateY(180deg)
+}
+.card:hover .back{
+  transform: rotateY(360deg);
+
+}

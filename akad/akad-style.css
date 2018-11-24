@@ -85,7 +85,7 @@ body {
 }
 
 .layout_section {
-    margin-top: 110px;
+    margin-top: 140px;
 }
 
 
@@ -161,13 +161,78 @@ body {
 	font: 700 30px/48px 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	color: white;
+	margin-bottom: 15px;
 }
 
 .button {
 	font: 700 14px 'Montserrat', sans-serif;
 	background: #7beec7;
-    min-width: 130px;
+
     padding: 20px 30px;
     border: none;
     line-height: 1em;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
 }
+
+.button__inverse {
+	text-decoration: none;
+	color: #7beec7;
+	background: #FFF;
+}
+
+
+.newsletter {
+	background-color: white;
+	padding: 20px 20px;
+}
+.newsletter_title {
+	font-size: 24px;
+	line-height: 36px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.newsletter_text {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #999;
+}
+
+.newsletter_form {
+	margin-top: 25px;
+	display: flex;
+
+}
+.newsletter_email {
+	flex-grow: 7;
+	font: 400 12px/48px 'Open Sans', sans-serif;
+	border: 1px solid #e5e5e5;
+	border-right: none;
+	padding-left: 20px;
+
+}
+
+
+.newsletter_email::-ms-input-placeholder
+{
+	color: #cdcdcd;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.newsletter_email::placeholder {
+	color: #cdcdcd;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.newsletter_button {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
