@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: sans-serif;
   height: 100%;
   margin: 0;
@@ -16,18 +17,21 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-img {
+
+.img {
   width: 500px;
   height: 200px;
 }
+
 .card {
   width: 500px;
   height: 200px;
-
   position: relative;
   perspective: 1000px;
 }
-.front, .back {
+
+.front,
+.back {
   position: absolute;
   width: inherit;
   height: inherit;
@@ -39,22 +43,20 @@ img {
   transition: 1s;
   backface-visibility: hidden;
 }
-.front{
- background: white;;
+
+.front {
+  background: white;
 }
 
 .back {
- background: #FF4081;
-
+  background: #FF4081;
   transform: rotateY(180deg);
-
 }
 
-
-.card:hover .front{
+.card:hover .front {
   transform: rotateY(180deg)
 }
-.card:hover .back{
-  transform: rotateY(360deg);
 
+.card:hover .back {
+  transform: rotateY(360deg);
 }
